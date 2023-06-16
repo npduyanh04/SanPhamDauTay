@@ -1,0 +1,78 @@
+body {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-image: url('https://i.imgur.com/3k2eDzW.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.title {
+    color: #fff;
+    font-size: 4em;
+    text-align: center;
+    z-index: 2;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    top: -200px;
+    animation: slide-up 1s forwards;
+}
+.message {
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #606060;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #bf2f2f;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.footer {
+    background-color: #bf2f2f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    animation: slide-up 1s forwards;
+}
+@keyframes slide-up {
+    from { top: -200px; }
+    to { top: 0; }
+}
